@@ -1,19 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index-style.css">
     <title>CyberShop</title>
 </head>
+
 <body>
-    <div class="container">
+    <div id="home" class="container home">
         <nav class="main-bar">
-            <div class="icon home"><img src="assets\svg\home.svg" alt="Description of the SVG" /><a href="index.html"></a></div>
-            <div class="icon icon-chagne search"><img src="assets\svg\search.svg" alt="Description of the SVG" /></div>
-            <div class="icon icon-chagne person"><img src="assets\svg\shopping-cart.svg" alt="Description of the SVG" /></div>
-            <div class="icon icon-chagne cart"><img src="assets\svg\user.svg" alt="Description of the SVG" /></div>
+            <div class="icon home"><a href="#"><img src="assets\svg\home.svg" alt="Description of the SVG" /></a></div>
+            <div class="icon video"><a href="#video"><img src="assets\svg\video-icon.svg"
+                        alt="Description of the SVG" /></a></div>
+            <div class="icon "><a href="#product"><img src="assets\svg\shopping-cart.svg"
+                        alt="Description of the SVG" /></a></div>
         </nav>
     </div>
+    <section id="hero">
+        <div class="hero-text">
+            <h1>Welcome to Our Website</h1>
+            <p>Discover amazing product and experiences</p>
+        </div>
+        <section id="video">
+            <video class="hero-video background-video" autoplay muted loop>
+                <source src="assets\videos\Coca-Cola _ 4K Commercial _ Product Video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </section>
+    <section class="product-container" id="product">
+        <a href="product-1.html" class="product glass">
+            <div class="product glass"><img src=assets\images\download.jpg alt="coca-cola glass"></div>
+        </a>
+        <a href="product2.html" class="product glass">
+            <div class="product glass"><img src=assets\images\coca-cola-buttle.jpg alt="coca-cola buttle"></div>
+        </a>
+        <a href="product3.html" class="product bottle">
+            <img src=assets\images\coca-cola-scarf.jpg alt="coca-cola scarf"> </div>
+        </a>
+    </section>
 </body>
+
 </html>
