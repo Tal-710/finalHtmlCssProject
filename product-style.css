@@ -1,70 +1,191 @@
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    background-color: #000000;
 }
 
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    border: 0.2vw solid rgb(111, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vw;
+    padding: 1vh 2vw;
+    font-size: 1.2vw;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+input:checked + label {
+    background-color: rgb(111, 0, 0);
+    color: white;
+    border-color: rgb(111, 0, 0);
+}
+
+/* Product Page */
 .product-page {
+    display: grid;
+    grid-template-rows: 1fr 0.3fr 2fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "cc cc cc"
+        "classic-btn blue-btn lilac-btn"
+        "pro-img pro-img pro-img"
+        "pro-details pro-details pro-details"
+        ". back-button .";
+    gap: 2vh;
+    background-color: white;
     text-align: center;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    width: 90%;
+    padding: 2%;
+    border-radius: 1vw;
+    box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.2);
+    width: 29vw;
+    height: 85vh;
+}
+
+#classic-btn {
+    grid-area: classic-btn;
+}
+
+#blue-btn {
+    grid-area: blue-btn;
+}
+
+#lilac-btn {
+    grid-area: lilac-btn;
+}
+
+.product-page #cc {
+    grid-area: cc;
+}
+
+/* Image Section */
+.product-image {
+    background-color: #f9f9f9;
+    border: 0.1vw solid #ddd;
+    border-radius: 1vw;
+    grid-area: pro-img;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 .product-image img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 10px;
+    display: none;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 1vw;
 }
 
-.product-details h1 {
-    font-size: 2rem;
-    color: #333;
+#classic-btn:checked ~ .product-image .classic {
+    display: block;
 }
 
-.product-details p {
-    font-size: 1.2rem;
-    color: #555;
+#blue-btn:checked ~ .product-image .blue {
+    display: block;
 }
 
-.options {
-    margin-top: 20px;
+#lilac-btn:checked ~ .product-image .lilac {
+    display: block;
 }
 
-.options button {
-    padding: 10px 15px;
-    margin: 5px;
-    border: none;
-    border-radius: 5px;
-    background-color: #e0e0e0;
-    cursor: pointer;
-    transition: background 0.3s;
+/* Product Details */
+.product-details {
+    color: black;
+    grid-area: pro-details;
+    font-size: 1.2vw;
 }
 
-.options button:hover {
-    background-color: #ccc;
+/* Back Button */
+.back-button {
+    grid-area: back-button;
+    margin-top: 2vh;
 }
 
 .back-button a {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 15px;
-    background-color: #ff5252;
-    color: white;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s;
+    color: white;
+    background-color: rgb(111, 0,0);
+    padding: 1vh 2vw;
+    border-radius: 1vw;
+    font-size: 1vw;
+    display: inline-block;
+    transition: background-color 0.3s;
 }
 
 .back-button a:hover {
-    background-color: #ff3333;
+    background-color: rgb(148, 5, 5);
+}
+/* Tablet (max-width: 768px) */
+@media (max-width: 768px) {
+    .product-page {
+        grid-template-rows: 0.5fr auto auto 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "cc cc cc"
+            "classic-btn blue-btn lilac-btn"
+            "pro-img pro-img pro-img"
+            "pro-details pro-details pro-details"
+            "back-button back-button back-button";
+        width: 80vw;
+        gap:2%;
+        height: auto;
+        padding: 3vh;
+    } 
+
+    label {
+        font-size: 2.5vw;
+        padding: 2vh 3vw;
+    }
+
+    .product-image {
+        height: 35vh;
+    }
+
+    .product-details {
+        font-size: 2vw;
+    }
+
+    .back-button a {
+        font-size: 2.5vw;
+        padding: 2vh 3vw;
+    }
+}
+
+/* Desktop (default, min-width: 769px) */
+@media (min-width: 769px) {
+
+    label {
+        font-size: 1.2vw;
+        padding: 1vh 2vw;
+    }
+
+    .product-image {
+        height: 40vh;
+    }
+
+    .product-details {
+        font-size: 1.2vw;
+    }
+
+    .back-button a {
+        font-size: 1vw;
+        padding: 1vh 2vw;
+    }
 }
