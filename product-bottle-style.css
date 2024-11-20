@@ -20,7 +20,7 @@ input[type="radio"] {
 }
 
 label {
-    border: 2px solid rgb(111, 0, 0);
+    border: 0.2vw solid rgb(111, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,7 +44,7 @@ input:checked + label {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
         "cc cc cc"
-        "classic-btn blue-btn lilac-btn"
+        "classic-btn zero-btn diet-btn"
         "pro-img pro-img pro-img"
         "pro-details pro-details pro-details"
         ". back-button .";
@@ -62,12 +62,12 @@ input:checked + label {
     grid-area: classic-btn;
 }
 
-#blue-btn {
-    grid-area: blue-btn;
+#zero-btn {
+    grid-area: zero-btn;
 }
 
-#lilac-btn {
-    grid-area: lilac-btn;
+#diet-btn {
+    grid-area: diet-btn;
 }
 
 .product-page #cc {
@@ -76,8 +76,8 @@ input:checked + label {
 
 /* Image Section */
 .product-image {
-    background-color: #f9f9f9;
-    border: 2px solid rgb(111, 0, 0);
+    background-color: #ffffff;
+    border: 1px solid rgb(111, 0, 0);
     border-radius: 1vw;
     grid-area: pro-img;
     display: flex;
@@ -88,8 +88,8 @@ input:checked + label {
 
 .product-image img {
     display: none;
-    max-width: 100%;
-    max-height: 100%;
+    width: 15vw;
+    height: 30vh;
     border-radius: 1vw;
 }
 
@@ -97,11 +97,11 @@ input:checked + label {
     display: block;
 }
 
-#blue-btn:checked ~ .product-image .blue {
+#zero-btn:checked ~ .product-image .zero {
     display: block;
 }
 
-#lilac-btn:checked ~ .product-image .lilac {
+#diet-btn:checked ~ .product-image .diet {
     display: block;
 }
 
@@ -126,7 +126,7 @@ input:checked + label {
     border-radius: 1vw;
     font-size: 1vw;
     display: inline-block;
-    transition: all 0.3s ease-out;
+    transition: background-color 0.3s;
 }
 
 .back-button a:hover {
@@ -139,7 +139,7 @@ input:checked + label {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:
             "cc cc cc"
-            "classic-btn blue-btn lilac-btn"
+            "classic-btn zero-btn diet-btn"
             "pro-img pro-img pro-img"
             "pro-details pro-details pro-details"
             "back-button back-button back-button";
