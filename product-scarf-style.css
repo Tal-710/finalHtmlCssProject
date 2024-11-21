@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 /* General Reset */
 * {
     box-sizing: border-box;
@@ -7,7 +8,9 @@
 
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     background-color: #000000;
     min-height: 100vh;
     display: flex;
@@ -165,6 +168,12 @@ input:checked + label {
     .back-button a {
         font-size: 2.5vw;
         padding: 2vh 3vw;
+    }
+    .product-image img {
+        display: none;
+        width: 47vw;
+        height: 21vh;
+        border-radius: 1vw;
     }
 }
 

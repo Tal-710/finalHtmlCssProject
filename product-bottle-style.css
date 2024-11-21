@@ -1,4 +1,4 @@
-/* General Reset */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,7 +7,9 @@
 
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     background-color: #000000;
     min-height: 100vh;
     display: flex;
@@ -80,6 +82,7 @@ input:checked + label {
     border: 1px solid rgb(111, 0, 0);
     border-radius: 1vw;
     grid-area: pro-img;
+    height: 35vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,8 +135,9 @@ input:checked + label {
 .back-button a:hover {
     background-color: rgb(148, 5, 5);
 }
-/* Tablet (max-width: 768px) */
-@media (max-width: 768px) {
+
+/* Phones (max-width: 600px) */
+@media (max-width: 600px){
     .product-page {
         grid-template-rows: 0.5fr auto auto 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
@@ -166,10 +170,16 @@ input:checked + label {
         font-size: 2.5vw;
         padding: 2vh 3vw;
     }
+    .product-image img {
+        display: none;
+        width: 50vw;
+        height: 35vh;
+        border-radius: 1vw;
+    }
 }
 
 /* Desktop (default, min-width: 769px) */
-@media (min-width: 769px) {
+@media (min-width: 601px) and (max-width: 1024px) {
 
     label {
         font-size: 1.2vw;
@@ -187,5 +197,11 @@ input:checked + label {
     .back-button a {
         font-size: 1vw;
         padding: 1vh 2vw;
+    }
+    .product-image img {
+        display: none;
+        width: 31vw;
+        height: 35vh;
+        border-radius: 1vw;
     }
 }
