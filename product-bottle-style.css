@@ -5,7 +5,6 @@
     padding: 0;
 }
 
-/* General Styles */
 body {
     font-family: "Lobster", sans-serif;
     font-weight: 400;
@@ -20,9 +19,8 @@ body {
 input[type="radio"] {
     display: none;
 }
-
 label {
-    border: 0.2vw solid rgb(111, 0, 0);
+    border: 2px solid rgb(111, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,7 +28,12 @@ label {
     padding: 1vh 2vw;
     font-size: 1.2vw;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    transition: all 0.3s ease-out;
+}
+
+label:hover {
+    background-color: rgb(184, 58, 58);
+    color: white;
 }
 
 input:checked + label {
@@ -57,7 +60,7 @@ input:checked + label {
     border-radius: 1vw;
     box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.2);
     width: 40vw;
-    height: 85vh;
+    height: 72vh;
 }
 
 #classic-btn {
@@ -76,7 +79,6 @@ input:checked + label {
     grid-area: cc;
 }
 
-/* Image Section */
 .product-image {
     background-color: #ffffff;
     border: 1px solid rgb(111, 0, 0);
@@ -108,14 +110,12 @@ input:checked + label {
     display: block;
 }
 
-/* Product Details */
 .product-details {
     color: black;
     grid-area: pro-details;
     font-size: 1.2vw;
 }
 
-/* Back Button */
 .back-button {
     grid-area: back-button;
     margin-top: 2vh;
@@ -136,7 +136,6 @@ input:checked + label {
     background-color: rgb(148, 5, 5);
 }
 
-/* Phones (max-width: 600px) */
 @media (max-width: 600px){
     .product-page {
         grid-template-rows: 0.5fr auto auto 1fr 1fr;
@@ -178,7 +177,6 @@ input:checked + label {
     }
 }
 
-/* Desktop (default, min-width: 769px) */
 @media (min-width: 601px) and (max-width: 1024px) {
 
     label {

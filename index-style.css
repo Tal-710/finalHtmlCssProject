@@ -68,12 +68,12 @@ body {
   flex-wrap: wrap;
   align-content: center;
   width: 100vw;
-  gap: 15px;
-  padding: 15%;
+  gap: 16px;
+  padding: 10% 10% 10% 7%;
   margin-bottom: 2%;
-  position: relative;
+  position: relative; 
   z-index: 2;
-  margin-top: 3%;
+  margin-top: 9%;
 }
 
 .product img {
@@ -128,9 +128,6 @@ section {
   padding: 10px; 
 }
 
-/* Responsive Design */
-
-/* Phones (max-width: 600px) */
 @media (max-width: 600px) {
   body {
     font-size: large;
@@ -183,7 +180,6 @@ section {
   }
 }
 
-/* Tablets (min-width: 601px and max-width: 1024px) */
 @media (min-width: 601px) and (max-width: 1024px) {
   body {
     font-size: x-large;
@@ -246,7 +242,7 @@ section {
 }
 }
 
-/* Desktops (min-width: 1025px) */
+
 @media (min-width: 1025px) {
   body {
     font-size: xx-large;

@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-/* General Reset */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* General Styles */
 body {
     font-family: "Lobster", sans-serif;
     font-weight: 400;
@@ -34,18 +33,18 @@ label {
     transition: all 0.3s ease-out;
 }
 
-label:hover{
-        background-color: rgb(184, 58, 58);
-        color: white;
+label:hover {
+    background-color: rgb(184, 58, 58);
+    color: white;
 }
 
-input:checked + label {
+input:checked+label {
     background-color: rgb(111, 0, 0);
     color: white;
     border-color: rgb(111, 0, 0);
 }
 
-/* Product Page */
+
 .product-page {
     display: grid;
     grid-template-rows: 1fr 0.3fr 2fr 1fr 1fr;
@@ -82,7 +81,6 @@ input:checked + label {
     grid-area: cc;
 }
 
-/* Image Section */
 .product-image {
     background-color: #f9f9f9;
     border: 2px solid rgb(111, 0, 0);
@@ -101,26 +99,26 @@ input:checked + label {
     border-radius: 1vw;
 }
 
-#classic-btn:checked ~ .product-image .classic {
+#classic-btn:checked~.product-image .classic {
     display: block;
 }
 
-#blue-btn:checked ~ .product-image .blue {
+#blue-btn:checked~.product-image .blue {
     display: block;
 }
 
-#lilac-btn:checked ~ .product-image .lilac {
+#lilac-btn:checked~.product-image .lilac {
     display: block;
 }
 
-/* Product Details */
+
 .product-details {
     color: black;
     grid-area: pro-details;
     font-size: 1.2vw;
 }
 
-/* Back Button */
+
 .back-button {
     grid-area: back-button;
     margin-top: 2vh;
@@ -129,7 +127,7 @@ input:checked + label {
 .back-button a {
     text-decoration: none;
     color: white;
-    background-color: rgb(111, 0,0);
+    background-color: rgb(111, 0, 0);
     padding: 1vh 2vw;
     border-radius: 1vw;
     font-size: 1vw;
@@ -140,7 +138,7 @@ input:checked + label {
 .back-button a:hover {
     background-color: rgb(148, 5, 5);
 }
-/* Tablet (max-width: 768px) */
+
 @media (max-width: 768px) {
     .product-page {
         grid-template-rows: 0.5fr auto auto 1fr 1fr;
@@ -152,10 +150,10 @@ input:checked + label {
             "pro-details pro-details pro-details"
             "back-button back-button back-button";
         width: 80vw;
-        gap:2%;
+        gap: 2%;
         height: auto;
         padding: 3vh;
-    } 
+    }
 
     label {
         font-size: 2.5vw;
@@ -176,7 +174,7 @@ input:checked + label {
     }
 }
 
-/* Desktop (default, min-width: 769px) */
+
 @media (min-width: 769px) {
 
     label {
