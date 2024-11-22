@@ -177,12 +177,13 @@ input:checked + label {
     }
 
     .product-details {
-        font-size: 2vw;
+        font-size: 4vw;
     }
 
     .back-button a {
         font-size: 2.5vw;
         padding: 2vh 3vw;
+        margin-bottom: 1vh;
     }
     .product-image img {
         display: none;
@@ -195,26 +196,40 @@ input:checked + label {
 @media (min-width: 601px) and (max-width: 1024px) {
 
     label {
-        font-size: 1.2vw;
-        padding: 1vh 2vw;
+        font-size: 2.5vw;
+        padding: 2vh 3vw;
+    }
+    .product-page {
+        grid-template-rows: 0.5fr auto auto 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "cc cc cc"
+            "classic-btn blue-btn lilac-btn"
+            "pro-img pro-img pro-img"
+            "pro-details pro-details pro-details"
+            "back-button back-button back-button";
+        width: 80vw;
+        gap: 2%;
+        height: auto;
+        padding: 3vh;
     }
 
     .product-image {
-        height: 40vh;
+        height: 35vh;
     }
 
     .product-details {
-        font-size: 1.2vw;
+        font-size: 2vw;
     }
 
     .back-button a {
-        font-size: 1vw;
-        padding: 1vh 2vw;
+        font-size: 2.5vw;
+        padding: 2vh 3vw;
     }
     .product-image img {
         display: none;
-        width: 31vw;
-        height: 35vh;
+        width: 50vw;
+        height: 30vh;
         border-radius: 1vw;
     }
 }
