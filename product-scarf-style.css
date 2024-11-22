@@ -171,8 +171,8 @@ input:checked + label {
     }
     .product-image img {
         display: none;
-        width: 47vw;
-        height: 21vh;
+        width: 50vw;
+        height: 30vh;
         border-radius: 1vw;
     }
 }
@@ -197,6 +197,12 @@ input:checked + label {
         font-size: 1vw;
         padding: 1vh 2vw;
     }
+    .product-image img {
+        display: none;
+        width: 15vw;
+        height: 30vh;
+        border-radius: 1vw;
+    }
 }
 
 @media (min-width: 1023px) and (min-height:1080px){
@@ -207,5 +213,4 @@ input:checked + label {
         height: 25vh;
         border-radius: 1vw;
     }
-
-} 
+}
