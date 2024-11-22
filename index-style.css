@@ -183,7 +183,8 @@ section {
   .hero-text h1 {
     position: relative;
     display: inline-block;
-    top:-11vh;
+    bottom:11vh;
+    left:5vw;
 }
 
   .hero-text p{
@@ -207,24 +208,14 @@ section {
   }
 
   .product-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: center;
-    width: 100vw;
-    gap: 15px;
-    padding: 15%;
-    margin-bottom: 2%;
-    position: relative;
-    z-index: 2;
-    margin-top: 22%;
+    padding: 24%;
+    margin-top: 5vh;
   }
 
 
   .main-bar {
     width: 83%;
-    left: 5%;
+    left: 7%;
     height: 7vh;
   }
 
