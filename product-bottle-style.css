@@ -3,6 +3,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
 }
 
 body {
@@ -11,9 +13,21 @@ body {
     font-style: normal;
     background-color: #000000;
     min-height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 3vw;
+    width: 100vw;
+    height: 98vh;
+}
+h2{
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
 }
 
 input[type="radio"] {
@@ -80,7 +94,7 @@ input:checked + label {
 
 .product-image {
     background-color: #ffffff;
-    border: 1px solid rgb(111, 0, 0);
+    border: 2px solid rgb(111, 0, 0);
     border-radius: 1vw;
     grid-area: pro-img;
     height: 35vh;
@@ -109,10 +123,12 @@ input:checked + label {
     display: block;
 }
 
-.product-details {
+.product-details{
     color: black;
     grid-area: pro-details;
-    font-size: 1.2vw;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .back-button {

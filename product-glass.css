@@ -12,9 +12,15 @@ body {
     font-style: normal;
     background-color: #000000;
     min-height: 100vh;
+}
+
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 3vw;
+    width: 100vw;
+    height: 98vh;
 }
 
 input[type="radio"] {

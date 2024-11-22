@@ -12,9 +12,21 @@ body {
     font-style: normal;
     background-color: #000000;
     min-height: 100vh;
+}
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 3vw;
+    width: 100vw;
+    height: 98vh;
+}
+
+
+h2{
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
+
 }
 
 input[type="radio"] {

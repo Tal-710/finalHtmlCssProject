@@ -60,7 +60,7 @@ body {
 .hero-video {
   position: absolute;
   top: 10%;
-  left: 0;
+  left: 1.5vw;
   width: 98vw;
   height: 40vh;
   object-fit: cover;
@@ -208,15 +208,17 @@ section {
   }
 
   .product-container {
-    padding: 24%;
-    margin-top: 5vh;
+    margin-left:14vw;
+    margin-top: 12vh;
+    padding: 15% 0% 5% 9%;
+
   }
 
 
   .main-bar {
     width: 83%;
-    left: 7%;
-    height: 7vh;
+    left: 3%;
+    height: 6vh;
   }
 
   .icon img {
@@ -230,6 +232,7 @@ section {
   }
   .hero-video{
     margin-top: 10vh;
+    margin-left:1vw;
   }
   .hero-text p{
     display: none;
@@ -247,6 +250,7 @@ section {
     margin-bottom: 34%;
   }
 
+
   .product img {
     transition: 0.2s ease-in;
     border: 5px solid rgb(111, 0, 0);
@@ -263,8 +267,8 @@ section {
     align-content: center;
     width: 100vw;
     gap: 15px;
-    padding: 15%;
-    margin-bottom: 2%;
+    padding: 15% 16% 0 15%;
+    margin-bottom: 15%;
     position: relative;
     z-index: 2;
     margin-top: 8%;
@@ -321,5 +325,9 @@ section {
     text-align: center;
     position: relative;
     margin-bottom: 26vh;
+  }
+
+  .hero-video {
+    left: 0.3vw;
   }
 }
