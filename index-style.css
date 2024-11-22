@@ -111,7 +111,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
   align-content: center;
-  width: 100vw;
   gap: 16px;
   padding: 16% 10% 10% 7%;
   margin-bottom: 5vh;
@@ -217,7 +216,7 @@ section {
 
   .main-bar {
     width: 83%;
-    left: 3%;
+    left: 9%;
     height: 6vh;
   }
 
