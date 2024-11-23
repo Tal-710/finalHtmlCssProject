@@ -90,7 +90,7 @@ body {
 .hero-text h1::after {
   content: "";
   position: absolute;
-  left: 0;
+  right: 0;
   bottom: -5px;
   width: 0;
   height: 2px;
