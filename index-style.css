@@ -74,8 +74,8 @@ body {
   color: white;
   text-align: center;
   margin-bottom: 13%;
-  margin-top: 11%;
   left: 2%;
+  top:17%;
   transition: all 0.5s ease-out;
   position: relative;
   display: inline-block;
@@ -182,7 +182,7 @@ section {
   .hero-text h1 {
     position: relative;
     display: inline-block;
-    bottom:11vh;
+    bottom:18vh;
     left:5vw;
 }
 
@@ -246,7 +246,7 @@ section {
     color: white;
     text-align: center;
     position: relative;
-    margin-bottom: 34%;
+    margin-bottom: 39%;
   }
 
 
