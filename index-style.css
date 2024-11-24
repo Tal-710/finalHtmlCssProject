@@ -91,7 +91,7 @@ body {
   content: "";
   position: absolute;
   right: 0;
-  bottom: -5px;
+  bottom: -4px;
   width: 0;
   height: 2px;
   background-color: rgb(111, 0, 0);
