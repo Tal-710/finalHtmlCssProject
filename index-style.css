@@ -165,9 +165,9 @@ body {
   background: rgb(111, 0, 0);
   justify-content: space-between;
   align-items: center;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-inline: 20%;
   z-index: 3;
+  padding-block: 2rem;
 }
 
 section {

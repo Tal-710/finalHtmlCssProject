@@ -168,6 +168,7 @@ input:checked+label {
     padding-left: 20%;
     padding-right: 20%;
     z-index: 3;
+    padding-block: 2rem;
 }
 
 .icon {
