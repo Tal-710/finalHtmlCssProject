@@ -112,7 +112,7 @@ body {
   flex-wrap: wrap;
   align-content: center;
   gap: 16px;
-  padding: 16% 10% 10% 7%;
+  padding: 21% 10% 10% 7%;
   margin-bottom: 5vh;
   position: relative;
   z-index: 2;
@@ -209,7 +209,7 @@ section {
   .product-container {
     margin-left:14vw;
     margin-top: 12vh;
-    padding: 15% 0% 5% 9%;
+    padding: 15% 0% 20% 9%;
 
   }
 
